@@ -34,4 +34,4 @@ if 'i' in nome:
 else:
     print("Não existe a letra i em seu nome")
     
-print("GitHub Filha da puta")    
+print("Mentira GitHub é um amorzinho")    
