@@ -111,7 +111,7 @@ print(" ")
          
 #Exemplo 8 - comando pass
 print("Exemplo pass") 
-for i in range(1,7):
+for i in range(1,10):
     if i == 3:
         pass # reserva este ponto do loop
         print("Reservado", end =' ') 
@@ -119,11 +119,9 @@ for i in range(1,7):
 print(" ")        
 
 #Exemplo 9 - comando else em loops
+soma=0
 print("Exemplo else em loops") 
-for n in range(2, 10):
-    for x in range(2, n):
-        if n % x == 0:
-            print( n, '=', x, '*', int(n/x))
-            break
-    else:
-        print(n, 'é um numero primo')
+for n in range(1, 11):
+    soma+=n
+else:
+    print(f'o valor das somas de 1 a 10 é {soma}')
