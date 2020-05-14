@@ -1,6 +1,5 @@
 """
-Loops for são utilizados para iterar sobre sequencias ou
-valores iteraveis, como:
+Loops for são utilizados para iterar sobre sequencias ou valores iteraveis, como:
 strings
 listas
 ranges
@@ -30,8 +29,7 @@ for num in lista:
 print(' ')   
  
 """
-ranges são geradores de sequencia numerica de maneira especificada (ordenada). Por padrão a sequencia é
-iniciada em zero, o passo é sempre um inteiro, e o valor de parada não é incluso. Pode ser em ordem
+ranges são geradores de sequencia numerica de maneira especificada (ordenada). Por padrão a sequencia é iniciada em zero, o passo é sempre um inteiro, e o valor de parada não é incluso. Pode ser em ordem
 crescente ou decrescente
 
 A sintaxe do range pode ser:
@@ -102,20 +100,13 @@ print(frase)
 print(f'A {letra} aparece {cont} vezes na frase')     
 
 """
-O comando break é utilizado para sair de um loop
-de maneira "forçada".
+O comando break é utilizado para sair de um loop de maneira "forçada".
 
-O comando continue é utilizado com um desvio da
-execução loop, não executando os comandos abaixo
-e reinicia um novo ciclo. 
+O comando continue é utilizado com um desvio da execução loop, não executando os comandos abaixo e reinicia um novo ciclo. 
 
-O comando pass é uma operação nula que pode ser utilizada
-para reservar espaço para um futuro código
+O comando pass é uma operação nula que pode ser utilizada para reservar espaço para um futuro código.
  
-O comando else em loops é utilizado ao final do loop
-seja por esgotamento de iteravel em um loop for ou por
-uma condição falsa em loop while
- 
+O comando else em loops é utilizado ao final do loop seja por esgotamento de iteravel em um loop for ou por uma condição falsa em loop while.
 """
 #Exemplo 7 - comando break
 print(' ') 

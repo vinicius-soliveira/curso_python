@@ -1,8 +1,6 @@
 """
-Listas são estruturas similares a arrays, com a diferença
-de serem dinâmicas, isto é, não possuem tamanho fixo.
-As listas, não possuem tipo de dado fizo podem comportar
-uma conjunto de qualquer tipo de dado.
+Listas são estruturas similares a arrays, com a diferença de serem dinâmicas, isto é, não possuem tamanho fixo.
+As listas, não possuem tipo de dado fizo podem comportar uma conjunto de qualquer tipo de dado.
 
 As listas são representadas por colchetes: []
 
@@ -32,7 +30,7 @@ print(lista1)
 lista1.sort()
 print(lista1)
 
-# Adicionando um elemento a lista: método append()
+# Adicionando um elemento ao final da lista: método append()
 lista2 = ['uva', 'maçã', 'pera', 'laranja']
 print(lista2)
 lista2.append('manga') # apenas um elemento por vez
@@ -40,9 +38,10 @@ print(lista2)
 lista2.append(['banana', 'goiaba', 'caju']) # adiciona uma lista dentro de uma lista
 print(lista2)
 
-# Para adicionar os elementos de uma lista a outra lista: método extend()
+# Para adicionar o elementos de uma lista ao final de outra lista: método extend()
 lista3 = ['uva', 'maçã', 'pera', 'laranja']
 print(lista3)
-lista3.extend([1, 2, 3, 's']) 
+lista3.extend([1, 2, 3, 's']) #tipo de dado dinâmico
 print(lista3)
     
+# Para adicionar um elemento na lista informando a posição método insert()
