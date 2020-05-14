@@ -30,24 +30,19 @@ for num in lista:
 print(' ')   
  
 """
-ranges são geradores de sequencia numerica de maneira
-especificada (ordenada). Por padrão a sequencia é
-iniciada em zero, o passo é sempre um inteiro, 
-e o valor de parada não é incluso. Pode ser em ordem
+ranges são geradores de sequencia numerica de maneira especificada (ordenada). Por padrão a sequencia é
+iniciada em zero, o passo é sempre um inteiro, e o valor de parada não é incluso. Pode ser em ordem
 crescente ou decrescente
 
 A sintaxe do range pode ser:
 range(valor_de_parada)
-    nesse caso inicia em zero e vai com passo 1 até o
-    valor de parada -1
+    nesse caso inicia em zero e vai com passo 1 até o valor de parada -1
     
 range(valor_inicial,valor_de_parada) 
-    nesse caso inicia no valor de início e vai com
-    passo 1 até o valor de parada -1
+    nesse caso inicia no valor de início e vai com passo 1 até o valor de parada -1
     
 range(valor_inicial,valor_de_parada, passo)
-    nesse caso inicia no valor de início e vai com
-    passo especificado até o valor de parada -1 
+    nesse caso inicia no valor de início e vai com passo especificado até o valor de parada -1 
 """
  
 #Exemplo 3
@@ -74,6 +69,7 @@ Loops while são utilizados para iterar sobre sequencias
             execução do loop
 """
 #Exemplo 5
+print(" ")  
 print("Exemplo while")
 numero = 0
 
