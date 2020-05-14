@@ -7,13 +7,12 @@ ranges
 enumerate
 
 """
-nome = 'Vinicius Oliveira'
-lista = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-numeros = range(1,10)
-
 #Exemplo 1
 print(' ') 
 print("Exemplo for em string")
+
+nome = 'Vinicius Oliveira'
+
 for letra in nome:
     print(letra.upper(), end = ' ')
  
@@ -22,6 +21,9 @@ print(' ')
 #Exemplo 2
 print(' ') 
 print("Exemplo for em lista")
+
+lista = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
 for num in lista:
     print(pow(num,2), end = ' ')
    
@@ -51,7 +53,10 @@ range(valor_inicial,valor_de_parada, passo)
  
 #Exemplo 3
 print(' ')  
-print("Exemplo for em range")   
+print("Exemplo for em range") 
+
+numeros = range(1,10)
+  
 for x in numeros:
     print(x, end = ' ')
     
