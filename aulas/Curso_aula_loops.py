@@ -48,7 +48,6 @@ range(valor_inicial,valor_de_parada)
 range(valor_inicial,valor_de_parada, passo)
     nesse caso inicia no valor de início e vai com
     passo especificado até o valor de parada -1 
-
 """
  
 #Exemplo 3
@@ -73,7 +72,6 @@ print(" ")
 Loops while são utilizados para iterar sobre sequencias
     while expressão booleana:
             execução do loop
-
 """
 #Exemplo 5
 print("Exemplo while")
@@ -102,13 +100,10 @@ while i < tamanho:
         letra = frase[i]
         cont = qtd_letra
     
-    
     i+=1
+    
 print(frase)
 print(f'A {letra} aparece {cont} vezes na frase')     
-
-
-
 
 """
 O comando break é utilizado para sair de um loop
