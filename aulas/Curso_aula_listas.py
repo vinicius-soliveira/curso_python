@@ -109,7 +109,7 @@ print(num1)
 print(num2)
 print(num3)
 lista10 += [3, 7, 11, 13]
-num1,num2, *lista_aux = lista10 #desempacota a lista em variáveis e um uma nova lista
+num1,num2, *lista_aux = lista10 #desempacota a lista em variáveis e um uma nova lista, o '*' indica uma lista 
 
 print(lista10)
 print(num1)
