@@ -102,12 +102,19 @@ print(lista9.index(0, 3, 9)) #faz a busca no intervalo entre 3 e 9 na lista
 # Desempacotamento de lista
 
 lista10 = [1,5,9]
-num1,num2,num3 = lista10
-
+num1,num2,num3 = lista10 #desempacota a lista em variáveis
+ 
 print(lista10)
 print(num1)
 print(num2)
 print(num3)
+lista10 += [3, 7, 11, 13]
+num1,num2, *lista_aux = lista10 #desempacota a lista em variáveis e um uma nova lista
+
+print(lista10)
+print(num1)
+print(num2)
+print(lista_aux)
 
 # Encontrando os valores de máximo e mínimo de uma lista
 lista11 = [4, 8, 2, 19, 5, 0]

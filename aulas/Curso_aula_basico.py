@@ -13,4 +13,11 @@ print("Maior de idade?", idade>=18, type(idade>=18))
 print(f'{nome} tem {idade} anos de idade e seu imc é {imc:.2f}')
 print('{} tem {} anos e seu imc é {:.2f}' .format(nome, idade, imc)) 
 
-print("Quero ver se eu to desenrolando git")
+# Trocar valores de variáveis em python
+
+x = 10
+y = 'bola'
+
+x, y = y, x
+
+# Métodos de strings
