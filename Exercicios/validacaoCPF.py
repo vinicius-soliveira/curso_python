@@ -15,10 +15,8 @@ while True:
     soma_1, soma_2 = 0, 0
              
     for indice, digito in enumerate(cpf):
-        
         soma_1 += int(digito)*(10-indice)
         soma_2 += int(digito)*(11-indice)
-        
         if indice == 8:
             break
     

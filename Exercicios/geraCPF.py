@@ -4,7 +4,6 @@ cpf_raw = str(randint(100000000, 999999999))
 soma_1, soma_2 = 0, 0
              
 for indice, digito in enumerate(cpf_raw):
-    
     soma_1 += int(digito)*(10-indice)
     soma_2 += int(digito)*(11-indice)
     
