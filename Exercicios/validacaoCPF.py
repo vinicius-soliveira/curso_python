@@ -1,3 +1,10 @@
+'''
+Um CPF é formado por 11 dígitos, em que os 9 primeiros são aleatórios e os dois ultimos são gerados a partir dos 9 primeiros(cpf_raw) .
+Para gerar os ultimos digitos obtem a soma dos produtos 10*1ºdigito, 9*2ºdigito...2*9ºdigito 
+ 
+
+'''
+
 while True:
     cpf = input("Digite o seu CPF(apenas números): ")
 
