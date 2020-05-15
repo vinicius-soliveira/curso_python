@@ -63,7 +63,9 @@ print(lista6)
 print(lista6[::-1]) # uma maneira alternativa
 
 # Para copiar uma lista
-lista7 = lista6.copy()
+lista7 = lista6.copy() # Deep Copy, as modificações nas listas são independentes
+print(lista7)
+lista7 = lista6 # Shallow Copy, a modificação em uma das listas reflete na outra
 print(lista7)
 
 # Para contar o numero de elementos de uma lista metodo len()
@@ -96,3 +98,18 @@ lista9 = [0, 1,2,5,8,6,7,0,2,6,9,10,14,0]
 print(lista9.index(6)) # retorna o indice da primeira ocorrencia do valor
 print(lista9.index(2, 3)) # inicia a busca a partir do indice 3
 print(lista9.index(0, 3, 9)) #faz a busca no intervalo entre 3 e 9 na lista
+
+# Desempacotamento de lista
+
+lista10 = [1,5,9]
+num1,num2,num3 = lista10
+
+print(lista10)
+print(num1)
+print(num2)
+print(num3)
+
+# Encontrando os valores de máximo e mínimo de uma lista
+lista11 = [4, 8, 2, 19, 5, 0]
+print(f'O valor máximo da lista é {max(lista11)}')
+print(f'O valor máximo da lista é {min(lista11)}')
