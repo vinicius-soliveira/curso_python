@@ -9,13 +9,22 @@ perguntas = {
             'resposta_certa': 'c',   
     },
     'Pergunta 2':{
-        'pergunta': 'Qual das opções abaixo não é uma fruta',
+        'pergunta': 'Qual das opções abaixo não é uma fruta?',
         'respostas': {
             'a': 'Caju',
             'b': 'Castanha',
             'c': 'Tomate',
             'd': 'Banana'},
             'resposta_certa': 'a',
+    },
+    'Pergunta 3':{
+        'pergunta': 'Qual o nome da moeda americana?',
+        'respostas': {
+            'a': 'Ouro',
+            'b': 'Real',
+            'c': 'Euro',
+            'd': 'Dólar'},
+            'resposta_certa': 'd',
     },
     #ADICIONE MAIS PERGUNTAS AQUI           
 }
@@ -37,7 +46,7 @@ for qst_k, qst_v in perguntas.items():
         pass    
 
 nota = acertos / questoes * 10
-print(f"\nSua nota foi {nota}\n")
+print(f"\nVocê acertou {acertos} perguntas. \nSua nota foi {nota}\n")
     
     
      
