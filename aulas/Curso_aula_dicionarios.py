@@ -85,14 +85,23 @@ produtos ={1:'arroz', 2: 'feijão', 3: 'frango', 4:'batata', 5:'macarrão'}
 print("A iteração padrão retorna as chaves:")
 for codigo in produtos:
     print(codigo, end=' ')
+
+print("\n\n Outra forma de iteração que retorna as chaves:")
+for codigo in produtos.keys(): #Recomendado
+    print(codigo, end=' ')
   
-print("\n\nPara retornar os valores utiliza-se o método values():")    
-for produto in produtos.values():
+print("Para retornar o valor pode se utilizar:")
+for codigo in produtos:
+    print(produtos[codigo], end=' ')
+  
+print("\n\nPara retornar os valores pode se utilizar o método values():")    
+for produto in produtos.values(): #Recomendado
     print(produto, end=' ')
  
 print("\n\nPara retornar em tuplas os pares chave/valor utiliza-se o método items():")        
 for i in produtos.items():
     print(i, end=' ')
+    
 print("\n\nE para desempacotamento:")      
 for i, j in produtos.items():
     print(i, j)
