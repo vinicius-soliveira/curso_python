@@ -6,7 +6,7 @@ duplicados, os conjuntos não são acessados via índice
 Conjuntos são bons para armazenamento de elementos sem que a ordenação seja
 necessaria.
 
-Os conjuntos são referenciados por chaves:{}
+Os conjuntos são referenciados por chaves:{}, e recebem apenas valores imutáveis
 
 '''
 # Criando um conjunto
@@ -26,6 +26,8 @@ conj.add(11)
 print(conj,type(conj))
 conj.add(1) #ignora a inserção de um termo repetido
 print(conj,type(conj))
+conj.update({0,2,4,6,8,10,12}) #Para adicionar varios elementos
+print(conj,type(conj))
 
 # Removendo elementos de um conjunto
 print("\nExemplo - removendo elementos em conjuntos")
@@ -33,7 +35,7 @@ conj = {1,3,5,7,9}
 print(conj,type(conj))
 conj.remove(1) # o argumento é o elemento
 print(conj,type(conj))
-conj.discard(3)
+conj.discard(3) #recomendado
 print(conj,type(conj))
 conj.clear() #remover todos os elementos
 print(conj,type(conj))
@@ -77,6 +79,14 @@ print(mult_15)
 print('\nDifference')
 mult_3n5 = mult_3.difference(mult_5)
 print(mult_3n5)
+mult_3n5 = mult_3 - (mult_5)
+print(mult_3n5)
+
+
+print('\nSymmetric Difference')
+mult_3e5n15 = mult_3.symmetric_difference(mult_5)
+print(mult_3e5n15)
+
 
 # Operações matemáticas em conjuntos numéricos
 print("\nExemplo - operações matemáticas de conjuntos\n")
