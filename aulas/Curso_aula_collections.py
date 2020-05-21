@@ -27,6 +27,7 @@ Deque  - é uma lista de alta performance
 from collections import Counter, defaultdict, OrderedDict, namedtuple, deque
 lista = [1,2,2,3,3,3,4,4,4,4,5,7,11,13]
 
+################################# Counter ################################
 print("\nExemplo - Counter")
 cont = Counter(lista)
 print(cont,type(cont))
@@ -49,11 +50,13 @@ palavras = texto.split()
 cont2 = Counter(palavras)
 print(cont2,type(cont2))
 
+################################# Default Dict ###########################
 print("\nExemplo - Default Dict")
 dicionario = defaultdict(lambda:0)
 dicionario['nome'] = 'Vinicius'
 print(dicionario,type(dicionario))
 
+################################# Ordered Dict ###########################
 print("\nExemplo - Ordered Dict")
 ord_dic = OrderedDict({'a':1, 'b':2, 'c':3})
 print(ord_dic,type(ord_dic))
@@ -73,6 +76,7 @@ ordic1 = OrderedDict({1:2,3:4})
 ordic2 = OrderedDict({3:4, 1:2})
 print(f'{ordic1} é igual a {ordic2}:{ordic1==ordic2}')
 
+################################# Named Tuple ###########################
 print("\nExemplo - Named Tuple")
 # Formas de declarar uma namedtuple
 pessoa = namedtuple('pessoa', 'nome idade profissao')
@@ -83,7 +87,8 @@ print("\nCriando um objeto namedtuple")
 vini = pessoa(nome='Vinicius', idade = 26, profissao = 'Estudante')
 print(vini, type(vini))
 
-print("\nExemplo - Named Tuple")
+################################# Deque ###########################
+print("\nExemplo - Deque")
 # criando um deque
 deq =  deque('vinicius')
 print(deq,type(deq))
