@@ -1,6 +1,6 @@
 
 '''
-Algoritmo praa encontrar valores repetidos em uma lista:
+Algoritmo para encontrar valores repetidos em uma lista:
 Cria-se uma lista inicialmente vazia
 A cada iteração adicona-se um valor da lista em verificação para a lista inicialmente vazia
 Para detectar a repetição verifica-se antes de adicionar o valor a lista se este já existe na lista
