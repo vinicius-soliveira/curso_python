@@ -47,6 +47,13 @@ amigos = 'vinicius', 'brendon', 'tiago', 'junior'
 res = [amigo.capitalize() for amigo in amigos]
 print(res)
 
+# Outro exemplo utilizando list comprehension
+print("\nOutro exemplo - utilizando list comprehension")
+
+tupla = [(v1, v2) for v1 in numeros for v2 in amigos]
+print(tupla)
+
+
 # Exemplo - utilizando condicionais em list comprehensions
 print("\nExemplo - utilizando condicionais em list comprehensions")
 
