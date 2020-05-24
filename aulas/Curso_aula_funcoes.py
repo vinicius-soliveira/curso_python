@@ -34,7 +34,8 @@ Nas funções, os parâmetros tem ordem de inserção:
 Parametros obrigatórios -> *args -> Parametros padrões -> **kwargs
 
 '''
-# Definindo funções
+########################## Definições de funções ######################
+
 def hello_world(): # Função sem entrada e sem retorno
     print("\nHello World\n") #A função criada utiliza uma função built-in Python
   
@@ -44,13 +45,6 @@ def hello_world(): # Função sem entrada e com retorno
 def lista(): #Uma função pode retornar diversos valores
     return 1, '2', (3,4,5), [6,7,8,9]
    
-from random import random   
-def cara_ou_coroa(): #Uma função pode ter mais de um return
-    """Função que gera pseudoaleatoriamente um resultado de arremesso de cara ou coroa"""
-    if random() <0.5:
-        return 'cara'
-    return 'coroa'
-
 def par_impar(numero): # Função com entrada e retorno
     return 'ímpar' if numero%2 else 'par'
 
@@ -59,6 +53,17 @@ def soma(a,b): # Função com vários dados de entrada
 
 def nome_completo (nome, sobrenome): # Função com argumentos nomeados
     return f'O nome completo é {nome} {sobrenome}'
+
+########################## Docstrings ##################################
+
+from random import random   
+def cara_ou_coroa(): #Uma função pode ter mais de um return
+    """Função que gera pseudoaleatoriamente um resultado de arremesso de cara ou coroa"""
+    if random() <0.5:
+        return 'cara'
+    return 'coroa'
+
+######################## Funções com parametros default #######################
 
 def potencia(base, expoente=1): #Função com parametro padrão
     return base ** expoente
@@ -73,6 +78,8 @@ def subtracao(a=0,b=0): # Função com vários dados de entrada
 def operacao(num1, num2, fun=soma): # Função com uma função como parâmetro padrão
     return fun(num1, num2)
  
+####################### Função com parametro *args #######################
+
 def func(*args):
     print(args)
     
@@ -83,7 +90,9 @@ def multiplica(*args):
             produto *=i
         else: return produto
     else: return 0       
-     
+
+####################### Função com Parametro **kwargs #######################
+
 def signos(**kwargs):
     print(kwargs)
     
@@ -99,7 +108,7 @@ def cadastro(nome, idade, *args, solteiro = True, **kwargs):
 def desempacota_nomes(**kwargs):
     return f"{kwargs['nome']} {kwargs['sobrenome']}"
    
-#Executando funções
+############################### Executando funções #############################
 print("\nExecutando função sem entrada e sem retorno")
 hello_world()
 ola = hello_world #variavel recebendo a função
@@ -121,6 +130,13 @@ print(f' 128 é {par_impar(128)}')
 print('\nExemplo - argumentos nomeados')
 print(nome_completo(sobrenome='Oliveira', nome = 'Vinicius')) # Função com argumentos nomeados
 
+########################## Docstrings ##################################
+
+# Exemplo - Docstring
+print(f'\n{cara_ou_coroa.__doc__}\n')
+
+############################ Executando funções com parametro default ##########################
+
 print('\nExemplo - parametro padrão')
 # Exemplo com 1 parametro padrão
 print("\nExemplo de uma função com um parametro padrão")
@@ -139,8 +155,7 @@ print("\nExemplo de uma função como parametro padrão")
 print(operacao(5,6))
 print(operacao(10,6, subtracao))
 
-# Exemplo - Docstring
-print(f'\n{cara_ou_coroa.__doc__}\n')
+############################ Executando funções com *args##########################
 
 # Exemplo - *args
 print("\nExemplo -*args")
@@ -156,6 +171,8 @@ print(multiplica())
 print(multiplica(2,3))
 print(multiplica(4,5,6))
 print(multiplica(*numeros))
+
+############################ Executando funções com **kwargs##########################
 
 # Exemplo - **kwargs
 print("\nExemplo -**kwargs")

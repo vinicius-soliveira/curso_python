@@ -1,57 +1,22 @@
 
-def detecta_duplicacao(*args):
-    pos = []
-    args = list(*args)
-    for i in range(0,12,1):
-        duple = False
-        aux = args[i]
-        for j in range(0,10,1):
-            for k in range(j+1,10,1):             
-                if aux[j] == aux[k]:
-                    pos.insert(i,aux[k])
-                    duple = True
-                    break
-            if duple: break
-        if not duple:
-            pos.insert(i, -1)
-             
-    return pos
-      
+'''
+Algoritmo para encontrar valores repetidos em uma lista:
+Cria-se uma lista inicialmente vazia
+A cada iteração adicona-se um valor da lista em verificação para a lista inicialmente vazia
+Para detectar a repetição verifica-se antes de adicionar o valor a lista se este já existe na lista
+Caso não, a busca continua até o fim da lista e a função retorna -1, caso sim a função retorna o numero repetido encontrado
+'''
 
-def detecta_primeira_repeticao(*args):
-    value = []
-    args = list(*args)
-    for i in range(0,12,1):
-        duple = False
-        aux = args[i]
-        pos = 10
-        x=-1
-        for j in range(0,10,1):
-            for k in range(j+1,10,1):                  
-                if aux[j] == aux[k] and k < pos:
-                    x= aux[k]
-                    pos = k
-                    duple = True
-        if duple:
-            value.insert(i, x)
-        else:
-            value.insert(i, -1)
-             
-    return value 
-      
 def encontra_primeira_repeticao(lista):
-    numeros_checados = set()
+    numeros_checados = list()
     primeiro_repetido = -1
     for i in lista:
         if i in numeros_checados:
             primeiro_repetido = i
             break
-        numeros_checados.add(i)
+        numeros_checados.append(i)
     return primeiro_repetido        
-        
-        
-                
-
+         
 lista_de_listas_de_inteiros = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     [9, 1, 8, 9, 9, 7, 2, 1, 6, 8],
@@ -67,6 +32,5 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-#print(len(lista_de_listas_de_inteiros))
-print(detecta_duplicacao(lista_de_listas_de_inteiros))
-print(detecta_primeira_repeticao(lista_de_listas_de_inteiros))
+for lista_de_inteiros in lista_de_listas_de_inteiros:
+    print(lista_de_inteiros, encontra_primeira_repeticao(lista_de_inteiros))
