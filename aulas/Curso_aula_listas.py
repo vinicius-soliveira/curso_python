@@ -1,6 +1,6 @@
 """
 Listas são estruturas similares a arrays, com a diferença de serem dinâmicas, isto é, não possuem tamanho fixo.
-As listas, não possuem tipo de dado fizo podem comportar uma conjunto de qualquer tipo de dado.
+As listas, não possuem tipo de dado fixo podem comportar uma conjunto de qualquer tipo de dado.
 
 As listas são representadas por colchetes: []
 
