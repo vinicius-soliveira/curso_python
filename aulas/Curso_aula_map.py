@@ -1,8 +1,9 @@
 '''
 Map 
 
-map é utilizado para fazer mapeamento de valores para função
-map é uma função que receve dois parametros: o primeiro a função,
+map é uma função integrada do Python que é utilizada para fazer
+mapeamento de valores para uma função.
+map é uma função que recebe dois parametros: o primeiro a função,
 e o segundo o iteravel.
 
 A função map retorna um iterável formado pelo valor da função
