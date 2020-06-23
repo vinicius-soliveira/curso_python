@@ -55,6 +55,16 @@ print("\n\nExemplo for em enumerate")
 for i in enumerate(nome[0:8]):
     print(i,end = ' ')  
    
+'''
+Para descobrir se um objeto é iterave pode se utilizar a 
+função built in hasattr(objeto, '__iter__')
+
+'''
+print("\n\nVerificando se é iteravel")
+num = 12345
+print(hasattr(num, '__iter__'))
+num = '12345'
+print(hasattr(num, '__iter__'))
 
 """
 Loops while são utilizados para iterar sobre sequencias
