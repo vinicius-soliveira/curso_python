@@ -17,6 +17,12 @@ Sintaxe: {chave: valor for valor in iteravel}
 Set Comprehension  uma estrutura análoga a list comprehension, só que aplicada a conjuntos
 Sintaxe: {valor for valor in iteravel}
 
+Generator é uma ferramenta bastante poderosa para realiazar processamento sobre 
+listas,tuplas, strings, ranges, etc.
+Sintaxe:
+
+(dado for dado in iteravel)
+
 """
 
 ################################ List Comprehension ##########################
@@ -136,3 +142,46 @@ print(numeros)
 
 letras = {letra for letra in 'Vinicius Oliveira'}
 print(letras)
+
+#################################### Generators #############################
+print(" ")
+print("Exemplo: utilizando generator expressions")
+print(" ")
+nomes = ['Vinicius', 'Vanessa', 'Walter', 'Vitor', 'Dilma', 'Zeca']
+gen = (nome[0] == 'V' for nome in nomes)
+print(gen)
+print(type(gen))
+############### Comparando o gasto de memória ##########################
+print(" ")
+print("Exemplo: comparando o gasto de memória")
+print(" ")
+
+from sys import getsizeof
+
+# lista gerada utilizando list comprehension
+list_comp = getsizeof([x * 10 for x in range(1000)])
+
+# lista gerada utilizando dictionary comprehension 
+dict_comp = getsizeof({x: x * 10 for x in range(1000)})
+
+# lista gerada utilizando set comprehension
+set_comp = getsizeof({x * 10 for x in range(1000)})
+
+# lista gerada utilizando generator
+gen = getsizeof((x * 10 for x in range(1000)))
+
+print("Para fazer a mesma tarefa gastamos em mémoria: ")
+print(f'List Comprehension: {list_comp} bytes')
+print(f'Dict Comprehension: {dict_comp} bytes')
+print(f'Set Comprehension: {set_comp} bytes')
+print(f'Generator Expression: {gen} bytes')
+
+############### Iterando sobre um objeto generator ##########################
+print(" ")
+print("Exemplo: Iterando sobre um objeto generator")
+print(" ")
+
+gen = (x * 10 for x in range(10))
+
+for num in gen:
+    print(num)
