@@ -1,4 +1,4 @@
-''''
+'''
 Tuplas são estruturas similares a listas com a distinção de serem imutáveis,
 isto é, os elementos não são editáveis, não podendo adicionar elementos, remover 
 elementos, mudar o valor de um elemento e toda operação sobre uma tupla gera outra tupla.
