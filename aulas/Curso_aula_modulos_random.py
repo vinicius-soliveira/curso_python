@@ -10,7 +10,8 @@ Algumas funções são random, randint, uniform, choice, shuffle
 A função random gera um número aleatório entre 0 e 1.
 A função randint gera um numero inteiro aleatório dentro de um dado intervalo
 A função uniform gera um numero aleatório dentro de um dado intervalo
-A função choice retorna um valor iteravel entre um iteravel
+A função choice retorna um valor entre um iteravel
+A função shuffle embaralha valores de um iteravel ordenavel.
 '''
 
 from random import random, randint, uniform, shuffle, choice
