@@ -1,0 +1,4 @@
+Estou aprendendo a manipular arquivos em Python!!!
+Que bacana!
+Logo mais serei expert em Python.
+E poderei desenvolver softwares bastante interesssantes.
