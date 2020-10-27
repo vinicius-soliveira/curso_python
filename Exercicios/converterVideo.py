@@ -17,9 +17,7 @@ debug = ''
 caminho = os.path.join(os.getcwd(), 'Exercicios/videos')
 
 for raiz, pastas, arquivos in os.walk(caminho):
-    print('teste')
     for arquivo in arquivos:
-        print(arquivo)
         if not fnmatch.fnmatch(arquivo, '*.mp4'):
             continue
 
