@@ -3,7 +3,7 @@ Em Python, módulos são bibliotecas que possuem um conjunto de funções.
 Módulos são úteis na reutilização de código.
 
 Módulo random possui varias funções para geração de numeros pseudo-aleatórios
-ou funções que retornam um elemento de um iteravel aleatoriamente.
+ou funções que sorteiam um elemento de um iteravel.
 
 Algumas funções são random, randint, uniform, choice, shuffle
 
